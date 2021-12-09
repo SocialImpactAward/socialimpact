@@ -1,0 +1,232 @@
+/* import font from fonts.css file */
+
+@import url(./fonts.css);
+
+/* CSS variables*/
+@import url(./partials/_variables.css);
+
+/* import global styling */
+@import url(./partials/_global.css);
+
+/* start navigation */
+
+.header_area{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 2rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 2rem;
+    
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 200;
+    padding: 1.5rem;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+
+.header_area .main-menu .navbar-nav .active a{
+    color: var(--dark-color);
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; */
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    /* background: var(--gradient-color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; */
+    color: var(--dark-color);
+}
+
+
+/* end navigation */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.contact {
+    margin-top: 6rem;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(nordanglialogo.png);
+    background-size: cover;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    
+    
+}
+.contact .content p{
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+.containerr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.containerr .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.containerr .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    margin-left: 50px;
+    
+}
+
+.contact .containerr .contactInfo .box .icon .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.containerr .contactInfo .box .icon .text h3{
+    font-weight: 500;
+    color: #368991;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+}
+
+
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    Left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #cf594d;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="Submit"]{
+    width: 100px;
+    background: #368991;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.contactForm .inputBox input[type="Submit"]:hover{
+    background-color: #72acb2;
+    transition: 0.5s;
+    color: black;
+    border-radius: 4px;
+}
+
+#status{
+    width: 15%;
+    max-width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+} 
+
+/* footer */
+
+.footer {
+    margin-top: 5rem;
+    padding: 3rem;
+    padding-bottom: 4rem;
+    height: 4rem;
+    background-color: #368991;
+    color: white;
+}
+
+/* scrollbar */
+
+body::-webkit-scrollbar{
+    width: 0.2rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #1f4e53;
+} 

@@ -1,0 +1,160 @@
+
+
+/* import font from fonts.css file */
+
+@import url(./fonts.css);
+
+/* CSS variables*/
+@import url(./partials/_variables.css);
+
+/* import global styling */
+@import url(./partials/_global.css);
+
+/* start navigation */
+
+.header_area{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 2rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 2rem;
+    
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 200;
+    padding: 1.5rem;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+
+.header_area .main-menu .navbar-nav .active a{
+    color: var(--dark-color);
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    color: var(--dark-color);
+}
+
+
+/* end navigation */
+
+/* banner area */
+
+  .site-banner {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+  }
+  .site-banner .banner-image {
+    perspective: 300px;
+    padding-top: 5rem;
+    width: 50%;
+    position: absolute;
+    left: 75%;
+    top:50%;
+    transform: translate(-70%, -50%);
+    transform-style: preserve-3d;
+  }
+  
+.site-main .site-banner {
+    background:url(../img/nord\ anglia\ logo\ 2.png) repeat -40% 40%;
+    margin-top: 5rem;
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 20%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+}
+
+
+.site-main .site-banner .banner-image img{
+    padding-left: 10rem;
+    width: 50rem;
+}
+/* end banner area */
+
+/* start video area */
+
+
+.site-main .about-area .about-title h2>span{
+    display: block;
+    font: normal bold 49px/60px;
+    letter-spacing: 21px;
+}
+
+
+.site-main .about-area .about-title h2>span{
+    display: block;
+    letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title .paragraph >p{
+    padding: .4rem 0;
+}
+
+/* end video area */
+
+/* goals area */
+
+.goals-area{
+    margin-top: 5rem;
+    padding-right: 3rem;
+}
+
+.site-main .goals-area .title-text{
+    padding: 4rem 14rem;
+}
+
+.site-main > .goals-area .goals{
+    padding: 2rem 0;
+    width: 19rem;
+    margin: 0rem .5rem;
+    cursor: pointer;
+}
+
+
+
+
+/* end goals area */
+
+
+.footer {
+    margin-top: 5rem;
+    padding: 3rem;
+    padding-bottom: 4rem;
+    height: 4rem;
+    background-color: var(--light-color);
+    color: white;
+}
+
+/* scrollbar */
+
+body::-webkit-scrollbar{
+    width: 0.2rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #1f4e53;
+} 

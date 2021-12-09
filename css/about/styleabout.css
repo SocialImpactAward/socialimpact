@@ -1,0 +1,235 @@
+
+
+/* import font from fonts.css file */
+
+@import url(./fonts.css);
+
+/* CSS variables*/
+@import url(./partials/_variables.css);
+
+/* import global styling */
+@import url(./partials/_global.css);
+
+
+
+
+/* start navigation */
+
+.header_area{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 2rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 2rem;
+    
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 200;
+    padding: 1.5rem;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    color: #96B5B9;
+    
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    color: black;
+}
+
+
+/* end navigation */
+
+/* banner area */
+
+  .site-banner {
+    width: 95%;
+    min-height: 100vh;
+  }
+
+  
+.site-banner .banner-image .img-about{
+    width: 30%;
+    
+}
+
+
+.site-main .site-banner {
+    margin-top: 5rem;
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 15%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+}
+
+
+
+.site-main .site-banner .banner-image h4{
+    padding-left: 0rem; 
+    padding-right: 0rem;
+    width: 60rem;
+    font-weight: 200;
+    margin-top: 2rem;
+} 
+/* end banner area */
+
+/* start video area */
+
+.site-main .about-area{
+    padding: 0rem 5rem;
+}
+
+.site-main .about-area .about-title h2>span{
+    display: block;
+    font: normal bold 49px/60px;
+    letter-spacing: 15px;
+}
+
+.site-main .about-area{
+    margin-top: -5rem;
+}
+
+.about-area .about-video .videoWrapper{
+    place-content: center;
+    margin-left: 36rem;
+    margin-top: -15rem;
+
+}
+
+.about-area .about-title{
+    margin: auto;
+    width: 110%;
+    display: block;
+    place-content: center;
+    position: relative;
+    padding-bottom: 20%;
+    height: 0;
+    padding-right: 50%;
+}
+
+.site-main .about-area .about-title .paragraph >p{
+    padding: .5rem 0;
+}
+
+/* end video area */
+
+/* photo gallery */
+
+.photo-gallery .container-stat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 80px 20px 0 20px;
+}
+
+.photo-gallery .container-stat .box{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.photo-gallery .container-stat .box .column1{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+
+}
+.photo-gallery .container-stat .box .column1 img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+.photo-gallery .container-stat .box .column2{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+
+}
+.photo-gallery .container-stat .box .column2 img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+.photo-gallery .container-stat .box .column3{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+
+}
+.photo-gallery .container-stat .box .column3 img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.photo-gallery .container-stat .btn{
+    margin: 40px 0 70px 0;
+    background: #1f4e53;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+
+.photo-gallery .container-stat .btn a{
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+
+.photo-gallery .container-stat .title-gallery{
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid #222;
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+/* end photo gallery */
+
+
+.footer {
+    margin-top: 5rem;
+    padding: 3rem;
+    padding-bottom: 4rem;
+    height: 4rem;
+    background-color: #1f4e53;
+    color: white;
+}
+
+/* scrollbar */
+
+body::-webkit-scrollbar{
+    width: 0.2rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #1f4e53;
+} 
